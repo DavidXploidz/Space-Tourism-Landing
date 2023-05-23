@@ -1,0 +1,40 @@
+:root{
+  /* Fonts */
+  
+
+
+
+
+
+
+}
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+body{
+  font-size: 16px;
+  font-family: var(--fuentePrincipal);
+  min-height: 100vh;
+}
+img, picture, svg, video{
+  display: block;
+  max-width: 100%;
+}
+input, textarea, button, select{
+  font: inherit;
+}
+/* Utilidades */
+.contenedor{
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
