@@ -1,0 +1,31 @@
+.home{
+    background-image: url(/public/images/home/background-home-desktop.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.home__content{
+    max-width: 450px;
+    min-height: 382px;
+    margin-left: 165px;
+    margin-top: 387px;
+}
+.home__title{
+    font-family: var(--headings);
+    color: var(--Violet);
+    font-size: 28px;
+    letter-spacing: 4.72px;
+}
+.home__title--space{
+    display: block;
+    color: var(--White);
+    font-size: 150px;
+}
+.home__p{
+    color: var(--Violet);
+    font-family: var(--normal);
+}

@@ -1,12 +1,15 @@
 :root{
   /* Fonts */
-  
+  --headings : 'Barlow Condensed', sans-serif;
+  --normal: 'Barlow', sans-serif;
 
+  /* Sizes */
+  --regular: 16px;
 
-
-
-
-
+  /* Colors */
+  --White: hsl(0, 0%, 100%);
+  --Gray97: #979797;
+  --Violet: #D0D6F9;
 }
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
@@ -21,9 +24,8 @@ html {
   font: inherit;
 }
 body{
-  font-size: 16px;
+  font-size: 18px;
   font-family: var(--fuentePrincipal);
-  min-height: 100vh;
 }
 img, picture, svg, video{
   display: block;

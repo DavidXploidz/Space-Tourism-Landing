@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
-import { SpaceProvider } from './context/SpaceProvider.jsx'
+import router from '../router'
+import { RouterProvider } from 'react-router-dom'
+import { SpaceProvider } from './context/SpaceProvider'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <SpaceProvider>
-      <App />
-    </SpaceProvider>
+      <SpaceProvider>
+        <RouterProvider router={router} />
+      </SpaceProvider>
   </React.StrictMode>,
 )
