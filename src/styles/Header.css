@@ -49,3 +49,7 @@
     font-weight: 400;
     text-transform: uppercase;
 }
+.header__link--activo{
+    color: red;
+    border-bottom: 2px solid var(--White);
+}

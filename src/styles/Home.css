@@ -8,11 +8,17 @@
     inset: 0;
     z-index: -1;
 }
+.home__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
 .home__content{
     max-width: 450px;
-    min-height: 382px;
+    /* min-height: 382px; */
     margin-left: 165px;
     margin-top: 387px;
+    align-self: center;
 }
 .home__title{
     font-family: var(--headings);
@@ -21,11 +27,33 @@
     letter-spacing: 4.72px;
 }
 .home__title--space{
-    display: block;
     color: var(--White);
     font-size: 150px;
+    font-family: var(--titles);
 }
 .home__p{
     color: var(--Violet);
+    line-height: 32px;
     font-family: var(--normal);
+    max-height: 128px;
+}
+.home__explore{
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-right: 165px;
+    margin-top: 495px;
+    height: 274px;
+    width: 274px;
+    background-color: var(--White);
+    border-radius: 50%;
+}
+.home__explore::after{
+    content: 'explore';
+    display: grid;
+    height: inherit;
+    place-items: center;
+    letter-spacing: 2px;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: var(--titles);
 }
