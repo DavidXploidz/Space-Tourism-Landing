@@ -1,0 +1,25 @@
+.destination{
+    background-image: url(/images/destination/background-destination-desktop.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.destination__title{
+    margin-top: 212px;
+    margin-left: 166.5px;
+    font-size: 28px;
+    font-family: var(--headings);
+    color: var(--White);
+    letter-spacing: 4.72px;
+    text-transform: uppercase;
+}
+.destination__title--span{
+    margin: 0;
+    font-weight: 700;
+    filter: opacity(30%);
+    margin-right: 34px;
+}
