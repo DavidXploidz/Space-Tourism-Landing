@@ -23,3 +23,57 @@
     filter: opacity(30%);
     margin-right: 34px;
 }
+.destination__grid{
+    display: flex;
+}
+.destination__image{
+    margin-left: 230px;
+    margin-top: 97px;
+}
+.destination__content{
+    margin-left: 157px;
+    margin-top: 64px;
+}
+.destination__ul{
+    display: grid;
+    max-width: 285.5px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+}
+.destination__li{
+    list-style: none;
+    color: var(--Violet);
+    letter-spacing: 2.7px;
+    font-size: 16px;
+    font-family: var(--headings);
+    text-transform: uppercase;
+}
+.destination__name{
+    font-size: 100px;
+    font-family: var(--titles);
+    color: var(--White);
+    text-transform: uppercase;
+}
+.destination__description{
+    line-height: 32px;
+    color: var(--Violet);
+    max-width: 444px;
+    font-family: var(--normal);
+}
+.destination__extras{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.destination__text{
+    color: var(--Violet);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: var(--headings);
+    letter-spacing: 2.36px;
+}
+.destination__numbers{
+    font-family: var(--titles);
+    color: var(--White);
+    font-size: 28px;
+    text-transform: uppercase;
+}
