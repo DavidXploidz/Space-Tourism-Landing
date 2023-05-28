@@ -11,6 +11,7 @@
   --White: hsl(0, 0%, 100%);
   --Gray97: #979797;
   --Violet: #D0D6F9;
+  --DarkGray: #383B4B;
 
 }
 /* apply a natural box layout model to all elements, but allowing components to change */

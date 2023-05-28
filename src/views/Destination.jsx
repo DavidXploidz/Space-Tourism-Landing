@@ -3,23 +3,31 @@ import { useState, useEffect } from 'react'
 
 export default function Destination() {
 
-  useEffect(() => {
-    consultarApi()
-  }, []);
-  
-
   const [data, setData] = useState([]);
   const [planet, setPlanet] = useState('')
+  const [tab, setTab] = useState('Moon');
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    consultarApi()
+  }, [index]);
+  
 
   const consultarApi = async () => {
     const url = 'http://localhost:5173/db.json';
     const respuesta = await fetch(url);
     const resultado = await respuesta.json();
     setData(resultado.destinations);
-    setPlanet(resultado.destinations[0]);
+    setPlanet(resultado.destinations[index]);
+    console.log(resultado.destinations[index])
   }
 
   const {name, description, distance, travel } = planet;
+
+  const handleChangeTab = (tab, index) => {
+    setTab(tab)
+    setIndex(index)
+  }
 
   return (
     <div className='destination'>
@@ -30,8 +38,8 @@ export default function Destination() {
         </div>
         <div className='destination__content'>
           <ul className='destination__ul'>
-            {data.map(planet => (
-              <li key={planet.name} className='destination__li'>{planet.name}</li>
+            {data.map((planet, index) => (
+              <li key={planet.name} className={`${tab === planet.name ? 'destination__li--active' : ''} destination__li`} onClick={() => handleChangeTab(planet.name, index)}>{planet.name}</li>
             ))}
           </ul>
           <div>
