@@ -1,0 +1,54 @@
+.crew{
+    background-image: url(/images/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.crew__content{
+    margin-top: 154px;
+    margin-left: 165.5px;
+    font-family: var(--titles);
+    color: var(--White);
+    text-transform: uppercase;
+}
+.crew__role{
+    font-size: 32px;
+    opacity: 50%;
+    margin-bottom: 1rem;
+}
+.crew__name{
+    font-size: 56px;
+    margin-bottom: 1rem;
+}
+.crew__bio{
+    color: var(--Violet);
+    text-transform: none;
+    max-width: 444px;
+    font-family: var(--normal);
+    line-height: 32px;
+}
+.crew__image{
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 137px;
+}
+.crew__dots{
+    display: flex;
+    justify-content: space-between;
+    max-width: 132px;
+    margin-left: 165.5px;
+    margin-top: 5rem;
+}
+.crew__dot{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--Gray97);
+    filter: opacity(17.44%);
+}

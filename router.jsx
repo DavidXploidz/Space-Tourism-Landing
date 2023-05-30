@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "./src/layouts/Layout";
 import Inicio from "./src/views/Inicio";
 import Destination from "./src/views/Destination";
+import Crew from "./src/views/Crew";
 
 
 const router = createBrowserRouter([ 
@@ -23,6 +24,16 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <Destination />
+            }
+        ]
+    },
+    {
+        path: '/crew',
+        element: <Layout />,
+        children: [
+            {
+                index: true,
+                element: <Crew />
             }
         ]
     }

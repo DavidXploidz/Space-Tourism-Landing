@@ -19,10 +19,10 @@ export default function Destination() {
     const resultado = await respuesta.json();
     setData(resultado.destinations);
     setPlanet(resultado.destinations[index]);
-    console.log(resultado.destinations[index])
   }
 
-  const {name, description, distance, travel } = planet;
+  const {name, description, distance, travel, images } = planet;
+
 
   const handleChangeTab = (tab, index) => {
     setTab(tab)
@@ -34,7 +34,8 @@ export default function Destination() {
       <h2 className='destination__title'><span className='destination__title destination__title--span'>01</span>Pick your destination</h2>
       <div className='destination__grid'>
         <div className='destination__image'>
-            <img src="/images/destination/image-moon.png" alt="image moon" />
+            {/* <img src="/images/destination/image-moon.png" alt="image moon" /> */}
+            <img src={`${images?.png}`} alt={`${name}`} />
         </div>
         <div className='destination__content'>
           <ul className='destination__ul'>

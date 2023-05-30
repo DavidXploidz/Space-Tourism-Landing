@@ -47,9 +47,19 @@
     font-size: 16px;
     font-family: var(--headings);
     text-transform: uppercase;
+    position: relative;
 }
 .destination__li:hover{
     cursor: pointer;
+}
+.destination__li:hover::after{
+    background-color: var(--Violet);
+    content: '';
+    height: 2px;
+    position: absolute;
+    bottom: -1rem;
+    width: 100%;
+    left: 0;
 }
 .destination__li--active{
     color: var(--White);
