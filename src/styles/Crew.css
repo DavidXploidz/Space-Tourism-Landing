@@ -52,3 +52,12 @@
     background-color: var(--Gray97);
     filter: opacity(17.44%);
 }
+.crew__dot:hover{
+    cursor: pointer;
+    background-color: var(--Gray97);
+    filter: opacity(100%);
+}
+.crew__dot--active{
+    background-color: var(--White);
+    filter: opacity(100%);
+}
