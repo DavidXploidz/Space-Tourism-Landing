@@ -3,6 +3,7 @@ import Layout from "./src/layouts/Layout";
 import Inicio from "./src/views/Inicio";
 import Destination from "./src/views/Destination";
 import Crew from "./src/views/Crew";
+import Technology from "./src/views/Technology";
 
 
 const router = createBrowserRouter([ 
@@ -34,6 +35,16 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <Crew />
+            }
+        ]
+    },
+    {
+        path: '/technology',
+        element: <Layout />,
+        children: [
+            {
+                index: true,
+                element: <Technology />
             }
         ]
     }

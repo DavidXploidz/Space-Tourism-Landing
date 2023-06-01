@@ -1,0 +1,71 @@
+.tech{
+    background-image: url(/images/technology/background-technology-desktop.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+.tech__grid{
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    margin-left: 165px;
+}
+.tech__steps{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    row-gap: 2.5rem;
+}
+.tech__step{
+    height: 80px;
+    width: 80px;
+    color: var(--White);
+    font-size: 32px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--Gray97);
+    display: grid;
+    place-items: center;
+    letter-spacing: 2px;
+}
+.tech__step:hover{
+    cursor: pointer;
+    border: 1px solid var(--White);
+}
+.tech__step--active{
+    background-color: var(--White);
+    color: var(--Darken);
+}
+.tech__content{
+    margin-left: 80px;
+    text-transform: uppercase;
+    color: var(--Violet);
+    align-self: center;
+}
+.tech__terminology{
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    font-family: var(--headings);
+    margin-bottom: 1rem;
+}
+.tech__name{
+    color: var(--White);
+    font-size: 56px;
+    font-family: var(--titles);
+    margin-bottom: 2rem;
+}
+.tech__description{
+    text-transform: none;
+    font-size: 18px;
+    font-family: var(--normal);
+    line-height: 32px;
+    max-width: 444px;
+}
+.tech__image{
+    min-height: 527px;
+    min-width: 515px;
+    justify-self: flex-end;
+}
