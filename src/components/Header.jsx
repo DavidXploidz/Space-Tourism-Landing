@@ -17,10 +17,10 @@ export default function Header() {
       </picture>
       <nav className='header__nav'>
         <ul className='header__links'>
-          <Link className={`${routeName === 'home' ? 'header__link--active' : ''} header__link`} to="/home">00 <span className='header__link--normal'>home</span></Link>
-          <Link className={`${routeName === 'destination' ? 'header__link--active' : ''} header__link`} to="/destination">01 <span className='header__link--normal'>destination</span></Link>
-          <Link className={`${routeName === 'crew' ? 'header__link--active' : ''} header__link`} to="/crew">02 <span className='header__link--normal'>crew</span></Link>
-          <Link className={`${routeName === 'technology' ? 'header__link--active' : ''} header__link`} to="/technology">03 <span className='header__link--normal'>technology</span></Link>
+          <Link className={`${routeName === 'home' ? 'header__link--active' : ''} header__link`} to="/home"><span className='header__link--normal'>00 </span>home</Link>
+          <Link className={`${routeName === 'destination' ? 'header__link--active' : ''} header__link`} to="/destination"><span className='header__link--normal'>01 </span>destination</Link>
+          <Link className={`${routeName === 'crew' ? 'header__link--active' : ''} header__link`} to="/crew"><span className='header__link--normal'>02 </span>crew</Link>
+          <Link className={`${routeName === 'technology' ? 'header__link--active' : ''} header__link`} to="/technology"><span className='header__link--normal'>03 </span>technology</Link>
         </ul>
       </nav>
     </header>
