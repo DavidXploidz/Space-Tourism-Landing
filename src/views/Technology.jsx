@@ -1,24 +1,52 @@
 import MainTitle from '../components/MainTitle'
 import '../styles/Tech.css'
+import { useEffect, useState } from 'react'
 
 export default function Technology() {
+
+    const [tech, setTech] = useState([])
+    const [data, setData] = useState([])
+    const [index, setIndex] = useState(0)
+    const [tab, setTab] = useState('Launch vehicle')
+
+    useEffect(() => {
+        consultarApi()
+      },[index])
+    
+
+    const consultarApi = async () => {
+        const url = 'http://localhost:5173/db.json';
+        const respuesta = await fetch(url);
+        const resultado = await respuesta.json();
+        setData(resultado.technology);
+        console.log(resultado)
+        setTech(resultado.technology[index]);
+      }
+    
+    const handleClickTech = async (name, index) => {
+        setTab(name)
+        setIndex(index)
+    }
+
+    const {name, description, images} = tech;
+
   return (
     <div className="tech">
         <MainTitle number={'03'} title={'Space launch 101'} />
         <div className='tech__grid'>
             <div className='tech__steps'>
-                <div className='tech__step tech__step--active'>1</div>
-                <div className='tech__step'>2</div>
-                <div className='tech__step'>3</div>
+                {data?.map((tech, index) => (
+                    <div key={index} className={`${tab === tech.name ? 'tech__step--active' : ''} tech__step`} onClick={() => handleClickTech(tech.name, index)}>
+                        {index+1}
+                    </div>
+                ))}
             </div>
             <div className='tech__content'>
                 <p className='tech__terminology'>the terminology...</p>
-                <h3 className='tech__name'>launch vehicle</h3>
-                <p className='tech__description'>
-                    A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earths surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, its quite an awe-inspiring sight on the launch pad!
-                </p>
+                <h3 className='tech__name'>{name}</h3>
+                <p className='tech__description'>{description}</p>
             </div>
-            <img className='tech__image' src="/images/technology/image-launch-vehicle-portrait.jpg" alt="image space" />
+            <img className='tech__image' src={images?.portrait} alt={`Image tech of ${name}`} />
         </div>
     </div>
   )
