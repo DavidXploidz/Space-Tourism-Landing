@@ -108,3 +108,39 @@
     font-size: 28px;
     text-transform: uppercase;
 }
+@media (width <= 1092px) {
+    .destination{
+        background-image: url(/images/destination/background-destination-tablet.jpg);
+    }
+    .destination__title{
+        margin-left: 28.5px;
+        margin-top: 136px;
+        font-size: 20px;
+        letter-spacing: 3.38px;
+    }
+    .destination__grid{
+        flex-direction: column;
+    }
+    .destination__image{
+        width: 300px;
+        margin-inline: auto;
+        margin-top: 60px;
+    }
+    .destination__content{
+        margin-inline: auto;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .destination__ul{
+        justify-content: center;
+        max-width: unset;
+    }
+    .destination__name{
+        font-size: 80px;
+    }
+    .destination__description{
+        font-size: 16px;
+        line-height: 28px;
+        max-width: 573px;
+    }
+}

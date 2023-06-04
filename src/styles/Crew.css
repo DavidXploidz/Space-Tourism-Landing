@@ -37,6 +37,7 @@
     position: absolute;
     bottom: 0;
     right: 137px;
+    z-index: -1;
 }
 .crew__dots{
     display: flex;
@@ -60,4 +61,40 @@
 .crew__dot--active{
     background-color: var(--White);
     filter: opacity(100%);
+}
+@media (width <= 1092px) {
+   .crew{
+        background-image: url(/images/crew/background-crew-tablet.jpg);
+    }
+   .crew__content{
+        margin-top: 60px;
+        text-align: center;
+        margin-inline: auto;
+    }
+   .crew__bio{
+        max-width: 458px;
+        margin-inline: auto;
+        font-size: 16px;
+        line-height: 28px;
+    }
+   .crew__name{
+        font-size: 40px;
+    }
+    .crew__role{
+        font-size: 24px;
+    }
+    .crew__dots{
+        margin-top: 2rem;
+        max-width: 88px;
+        margin-inline: auto;
+    }
+    .crew__dot{
+        width: 10px;
+        height: 10px;
+    }
+    .crew__image{
+        height: 532px;
+        max-width: 456px;
+        right: calc(50% - 228px);
+    }
 }
