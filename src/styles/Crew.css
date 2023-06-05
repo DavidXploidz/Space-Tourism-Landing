@@ -98,3 +98,24 @@
         right: calc(50% - 228px);
     }
 }
+@media (width <= 668px) {
+    .crew__role{
+        font-size: 16px;
+    }
+    .crew__name{
+        font-size: 24px;
+    }
+    .crew__bio{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .crew__image{
+        max-height: 327px;
+        max-width: 223px;
+        top: 8rem;
+        right: calc(50% - 111.5px);
+    }
+    .crew__content{
+        margin-top: 20rem;
+    }
+}

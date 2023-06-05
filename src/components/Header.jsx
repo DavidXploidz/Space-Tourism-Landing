@@ -12,9 +12,10 @@ export default function Header() {
 
   return (
     <header className='header'>
-      <picture className='header__logo'>
-        <img src="/images/shared/logo.svg" alt="logo principal" />
-      </picture>
+      <div className='header__icons'>
+        <img className='header__logo' src="/images/shared/logo.svg" alt="logo principal" />
+        <img className='header__ham' src="/images/shared/icon-hamburger.svg" alt="menu ham" />
+      </div>
       <nav className='header__nav'>
         <ul className='header__links'>
           <Link className={`${routeName === 'home' ? 'header__link--active' : ''} header__link`} to="/home"><span className='header__link--normal'>00 </span>home</Link>

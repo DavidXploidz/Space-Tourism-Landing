@@ -144,3 +144,40 @@
         max-width: 573px;
     }
 }
+@media (width <= 668px) {
+   .destination{
+        background-image: url(/images/destination/background-destination-mobile.jpg);
+    }
+    .destination__title{
+        font-size: 16px;
+        margin-top: 88px;
+        text-align: center;
+    }
+    .destination__title--span{
+        margin-right: 15px;
+        margin-left: 0;
+    }
+    .destination__image{
+        height: 170px;
+        width: 170px;
+        margin-top: 40px;
+    }
+    .destination__li{
+        font-size: 14px;
+    }
+    .destination__name{
+        font-size: 56px;
+    }
+    .destination__description{
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 327px;
+    }
+    .destination__extras{
+       display: flex;
+       row-gap: 1rem;
+       flex-direction: column;
+       margin-top: 1.5rem;
+       padding: 1rem 0;
+    }
+}

@@ -62,6 +62,9 @@
     left: 0;
     bottom: -38px;
 }
+.header__ham{
+    display: none;
+}
 /* Tablet styles */
 @media (width <= 1092px) {
    .header{
@@ -86,4 +89,24 @@
    .header__link--normal{
         display: none;
     }
+}
+/* Mobile styles */
+@media (width <= 668px) {
+   .header{
+        margin-left: 24px;
+        margin-right: 24px;
+   }
+   .header__nav{
+        display: none;
+   }
+   .header__icons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* min-width: 330px; */
+        width: 100%;
+   }
+   .header__ham{
+        display: block;
+   }
 }
