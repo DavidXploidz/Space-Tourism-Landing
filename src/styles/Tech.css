@@ -65,9 +65,10 @@
     max-width: 444px;
 }
 .tech__image{
-    min-height: 527px;
-    min-width: 515px;
+    height: 527px;
+    width: 515px;
     justify-self: flex-end;
+    object-fit: cover;
 }
 @media (width <= 1092px) {
     .tech{
@@ -80,9 +81,8 @@
     }
     .tech__image{
         margin-top: 60px;
-        max-height: 310px;
-        min-height: 310px;
-        object-position: center;
+        height: 310px;
+        width: 100%;
     }
     .tech__content{
         text-align: center;
@@ -106,5 +106,49 @@
         height: 58px;
         width: 58px;
         font-size: 24px;
+    }
+}
+@media (width <= 668px) {
+   .tech{
+        background-image: url(/images/technology/background-technology-mobile.jpg);
+    }
+    .tech__grid{
+        display: grid;
+        grid-template-areas: 
+            'image image image'
+            'steps steps steps'
+            'info info info'
+        ;
+    }
+    .tech__image{
+        margin-top: 30px;
+        max-height: 170px;
+        grid-area: image;
+    }
+    .tech__steps{
+        grid-area: steps;
+        justify-self: center;
+    }
+    .tech__step{
+        height: 40px;
+        width: 40px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .tech__content{
+        margin-top: 1.5rem;
+        grid-area: info;
+    }
+    .tech__terminology{
+        font-size: 14px;
+        letter-spacing: 2.36px;
+    }
+    .tech__name{
+        font-size: 24px;
+        margin-bottom: 1rem;
+    }
+    .tech__description{
+        font-size: 15px;
+        line-height: 25px;
     }
 }
