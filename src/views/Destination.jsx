@@ -14,7 +14,8 @@ export default function Destination() {
   
 
   const consultarApi = async () => {
-    const url = 'http://localhost:5173/db.json';
+    // const url = 'http://localhost:5173/db.json';
+    const url = 'https://my-json-server.typicode.com/DavidXploidz/Space-Tourism-Landing/db';
     const respuesta = await fetch(url);
     const resultado = await respuesta.json();
     setData(resultado.destinations);
@@ -34,7 +35,7 @@ export default function Destination() {
       <h2 className='destination__title'><span className='destination__title destination__title--span'>01</span>Pick your destination</h2>
       <div className='destination__grid'>
         <div className='destination__image'>
-            {/* <img src="/images/destination/image-moon.png" alt="image moon" /> */}
+            {/* <img src="images/destination/image-moon.png" alt="image moon" /> */}
             <img src={`${images?.png}`} alt={`${name}`} />
         </div>
         <div className='destination__content'>

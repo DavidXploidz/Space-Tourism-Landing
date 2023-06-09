@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom"; 
+import { createHashRouter } from "react-router-dom"; 
 import Layout from "./src/layouts/Layout";
 import Inicio from "./src/views/Inicio";
 import Destination from "./src/views/Destination";
@@ -6,9 +6,9 @@ import Crew from "./src/views/Crew";
 import Technology from "./src/views/Technology";
 
 
-const router = createBrowserRouter([ 
+const router = createHashRouter([ 
     { 
-        path: '/', 
+        path: '/home', 
         element: <Layout />, 
        //Children quiere decir las paginas que utilizaran ese layout 
         children: [ 

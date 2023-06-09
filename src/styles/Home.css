@@ -1,5 +1,5 @@
 .home{
-    background-image: url(/images/home/background-home-desktop.jpg);
+    background-image: url(images/home/background-home-desktop.jpg);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -76,7 +76,7 @@
 /* Tablets styles */
 @media (width <= 1092px) {
    .home{
-        background-image: url(/images/home/background-home-tablet.jpg);
+        background-image: url(images/home/background-home-tablet.jpg);
     }
    .home__container{
         display: block;
@@ -105,7 +105,7 @@
 }
 @media (width <= 668px) {
     .home{
-        background-image: url(/images/home/background-home-mobile.jpg);
+        background-image: url(images/home/background-home-mobile.jpg);
     }
     .home__content{
         margin-top: 112px;

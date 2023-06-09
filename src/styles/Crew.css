@@ -1,5 +1,5 @@
 .crew{
-    background-image: url(/images/crew/background-crew-desktop.jpg);
+    background-image: url(images/crew/background-crew-desktop.jpg);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -64,7 +64,7 @@
 }
 @media (width <= 1092px) {
    .crew{
-        background-image: url(/images/crew/background-crew-tablet.jpg);
+        background-image: url(images/crew/background-crew-tablet.jpg);
     }
    .crew__content{
         margin-top: 60px;

@@ -14,7 +14,7 @@ export default function Crew() {
   },[index])
 
   const consultarApi = async () => {
-    const url = 'http://localhost:5173/db.json';
+    const url = 'https://my-json-server.typicode.com/DavidXploidz/Space-Tourism-Landing/db';
     const respuesta = await fetch(url);
     const resultado = await respuesta.json();
     setData(resultado.crew);
