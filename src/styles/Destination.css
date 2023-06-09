@@ -1,5 +1,5 @@
 .destination{
-    background-image: url(images/destination/background-destination-desktop.jpg);
+    background-image: url(../images/destination/background-destination-desktop.jpg);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -110,7 +110,7 @@
 }
 @media (width <= 1092px) {
     .destination{
-        background-image: url(images/destination/background-destination-tablet.jpg);
+        background-image: url(../images/destination/background-destination-tablet.jpg);
     }
     .destination__title{
         margin-left: 28.5px;
@@ -146,7 +146,7 @@
 }
 @media (width <= 668px) {
    .destination{
-        background-image: url(images/destination/background-destination-mobile.jpg);
+        background-image: url(../images/destination/background-destination-mobile.jpg);
     }
     .destination__title{
         font-size: 16px;
