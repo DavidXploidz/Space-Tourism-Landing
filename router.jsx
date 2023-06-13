@@ -8,7 +8,7 @@ import Technology from "./src/views/Technology";
 
 const router = createHashRouter([ 
     { 
-        path: '/', 
+        path: '/home', 
         element: <Layout />, 
        //Children quiere decir las paginas que utilizaran ese layout 
         children: [ 

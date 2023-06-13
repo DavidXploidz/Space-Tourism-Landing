@@ -4,20 +4,18 @@
     background-position: top center;
     background-repeat: no-repeat;
     height: 100vh;
-    position: absolute;
-    inset: 0;
-    z-index: -1;
+    display: grid;
 }
 .home__container{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 .home__content{
     max-width: 450px;
-    /* min-height: 382px; */
-    margin-left: 165px;
-    margin-top: 387px;
-    align-self: center;
+    align-self: flex-end;
 }
 .home__title{
     font-family: var(--headings);
@@ -39,8 +37,6 @@
 .home__explore{
     justify-self: flex-end;
     align-self: flex-end;
-    margin-right: 165px;
-    margin-top: 495px;
     height: 274px;
     width: 274px;
     background-color: var(--White);

@@ -4,7 +4,9 @@
     align-items: center;
     justify-content: space-between;
     margin-left: 55px;
-    margin-top: 40px;
+    position: fixed;
+    width: 100%;
+    top: 40px;
 }
 .header__logo{
     background-color: var(--White);

@@ -3,7 +3,7 @@ import '../styles/Home.css'
 export default function Inicio() {
   return (
     <div className="home">
-      <div className="home__container">
+      <div className="home__container container">
         <div className='home__content'>
           <h1 className='home__title'>SO, YOU WANT TO TRAVEL TO</h1>
           <p className='home__title--space'>SPACE</p>
