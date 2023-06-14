@@ -32,21 +32,23 @@ export default function Technology() {
 
   return (
     <div className="tech">
-        <MainTitle number={'03'} title={'Space launch 101'} />
-        <div className='tech__grid'>
-            <div className='tech__steps'>
-                {data?.map((tech, index) => (
-                    <div key={index} className={`${tab === tech.name ? 'tech__step--active' : ''} tech__step`} onClick={() => handleClickTech(tech.name, index)}>
-                        {index+1}
-                    </div>
-                ))}
+        <div className="container container--right">
+            <MainTitle number={'03'} title={'Space launch 101'} />
+            <div className='tech__grid'>
+                <div className='tech__steps'>
+                    {data?.map((tech, index) => (
+                        <div key={index} className={`${tab === tech.name ? 'tech__step--active' : ''} tech__step`} onClick={() => handleClickTech(tech.name, index)}>
+                            {index+1}
+                        </div>
+                    ))}
+                </div>
+                <div className='tech__content'>
+                    <p className='tech__terminology'>the terminology...</p>
+                    <h3 className='tech__name'>{name}</h3>
+                    <p className='tech__description'>{description}</p>
+                </div>
+                <img className='tech__image' src={images?.portrait} alt={`Image tech of ${name}`} />
             </div>
-            <div className='tech__content'>
-                <p className='tech__terminology'>the terminology...</p>
-                <h3 className='tech__name'>{name}</h3>
-                <p className='tech__description'>{description}</p>
-            </div>
-            <img className='tech__image' src={images?.portrait} alt={`Image tech of ${name}`} />
         </div>
     </div>
   )

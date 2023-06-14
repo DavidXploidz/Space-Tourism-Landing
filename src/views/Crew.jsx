@@ -30,6 +30,7 @@ export default function Crew() {
 
   return (
     <div className="crew">
+      <div className="container">
         <MainTitle number={'02'} title={'Meet your crew'} />
         <div className='crew__content'>
             <p className='crew__role'>{role}</p>
@@ -46,6 +47,7 @@ export default function Crew() {
             <div className='crew__dot' onClick={() => handleSetTab(3)}></div> */}
         </div>
         <img className='crew__image' src={`${images?.png}`} alt={`Image profile of ${name}`} />
+      </div>
     </div>
   )
 }

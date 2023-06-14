@@ -48,4 +48,5 @@ input, textarea, button, select{
   padding-top: var(--top-padding);
   padding-inline: var(--inline-padding);
   padding-bottom: var(--bottom-padding);
+  position: relative;
 }

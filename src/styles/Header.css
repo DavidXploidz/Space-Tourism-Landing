@@ -4,9 +4,10 @@
     align-items: center;
     justify-content: space-between;
     margin-left: 55px;
-    position: fixed;
-    width: 100%;
+    position: absolute;
+    width: calc(100% - 55px);
     top: 40px;
+    z-index: 1;
 }
 .header__logo{
     background-color: var(--White);
@@ -74,8 +75,10 @@
 /* Tablet styles */
 @media (width <= 1092px) {
    .header{
-        margin-top: 0;
-        margin-left: 39px;
+    top: 0;
+    right: 0;
+        /* margin-top: 0;
+        margin-left: 39px; */
    }
    .header__nav{
         max-width: 450px;
@@ -103,13 +106,14 @@
         margin-right: 24px;
     }
     .header__nav {
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         opacity: 0;
         transition: all 0.2s ease-in;
         overflow: hidden;
         z-index: -1;
+        height: 100%;
     }
     .header__nav--mobile {
         padding-top: 5rem;

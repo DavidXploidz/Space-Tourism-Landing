@@ -114,9 +114,10 @@
         background-image: url(../images/destination/background-destination-tablet.jpg);
     }
     .destination__title{
-        margin-left: 28.5px;
-        margin-top: 136px;
+        /* margin-left: 28.5px; */
+        /* margin-top: 136px; */
         font-size: 20px;
+        text-align: center;
         letter-spacing: 3.38px;
     }
     .destination__grid{
@@ -151,7 +152,7 @@
     }
     .destination__title{
         font-size: 16px;
-        margin-top: 88px;
+        /* margin-top: 88px; */
         text-align: center;
     }
     .destination__title--span{

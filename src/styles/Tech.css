@@ -3,15 +3,16 @@
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    height: 100vh;
-    position: absolute;
-    inset: 0;
-    z-index: -1;
+    min-height: 100vh;
+    display: grid;
 }
 .tech__grid{
     display: grid;
     grid-template-columns: 100px 1fr 1fr;
-    margin-left: 165px;
+    /* margin-left: 165px; */
+}
+.container--right{
+    padding-right: 0;
 }
 .tech__steps{
     display: flex;
@@ -73,6 +74,9 @@
 @media (width <= 1092px) {
     .tech{
         background-image: url(../images/technology/background-technology-tablet.jpg);
+    }
+    .container--right{
+        padding-inline: 0;
     }
     .tech__grid{
         display: flex;
