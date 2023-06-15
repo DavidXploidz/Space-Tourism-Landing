@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
 }
 .home__container{

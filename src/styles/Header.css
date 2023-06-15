@@ -114,12 +114,14 @@
         overflow: hidden;
         z-index: -1;
         height: 100%;
+        visibility: hidden;
     }
     .header__nav--mobile {
         padding-top: 5rem;
         opacity: 1;
         width: 70%;
         z-index: 1;
+        visibility: visible;
     }
    .header__links{
         grid-template-columns: 1fr;

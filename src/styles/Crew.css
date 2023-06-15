@@ -109,7 +109,7 @@
     .crew__image{
         max-height: 327px;
         max-width: 223px;
-        top: 8rem;
+        top: 5rem;
         right: calc(50% - 111.5px);
     }
     .crew__content{

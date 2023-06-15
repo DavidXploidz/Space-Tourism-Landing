@@ -45,8 +45,16 @@ input, textarea, button, select{
 }
 /* Utilidades */
 .container{
-  padding-top: var(--top-padding);
-  padding-inline: var(--inline-padding);
+  padding-top: 88px;
+  padding-inline: 10px;
   padding-bottom: var(--bottom-padding);
   position: relative;
+}
+@media (width >= 768px) {
+  .container{
+    padding-top: var(--top-padding);
+    padding-inline: var(--inline-padding);
+    padding-bottom: var(--bottom-padding);
+    position: relative;
+  }
 }
